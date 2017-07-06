@@ -78,6 +78,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public void setData(@NonNull List<? extends IViewType> dataList) {
         mDataList.clear();
         mDataList.addAll(dataList);
+        notifyDataSetChanged();
     }
 
     private void initTitle(@NonNull RecyclerView.ViewHolder holder, int position) {
